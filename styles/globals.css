@@ -24,3 +24,28 @@ a {
     background: black;
   }
 }
+
+body {
+  background: #fcfcfc;
+}
+h1, h2, h3 {
+  color: #333;
+}
+h1 {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 52px;
+  margin-bottom: 0.9em;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 1em;
+}
