@@ -19,7 +19,6 @@ export default function Home() {
         <h3>36180940070</h3>
         <h2>Routing Number</h2>
         <h3>031176110</h3>
-        <h1>testing</h1>
         <Link href="/maps"><a>Maps</a></Link>
       </main>
     </div>
