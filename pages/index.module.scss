@@ -1,0 +1,73 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueText {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.paymentMethods {
+  display: flex;
+  max-width: 1200px;
+  > div {
+    flex: 1 0 30%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 799px) {
+  .paymentMethods {
+    flex-direction: column;
+    > div {
+      // flex: 1 0 30%;
+    }
+  }
+}
+
+.capitalOneLogo {
+  margin: 0 auto;
+  width: 71% !important;
+  margin-bottom: 20px;
+}
+.venmoLogo {
+  margin: 0 auto;
+  width: 80%;
+}
+.venmoQR {
+
+}
+.cashAppLogo {
+ 
+}
+.cashAppQR {
+  img {
+    width: 47%;
+    margin-top: -30px;
+  }
+}
+
+.maps {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #0070f3;
+}
+

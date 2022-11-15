@@ -6,14 +6,14 @@ export default function Maps() {
       <h2>Chicago</h2>
       <Image
         alt="Downtown Chicago"
-        src="/chicago1.png"
+        src="/maps/chicago1.png"
         // layout="fill"
         width={926}
         height={731}
       />
       <Image
         alt="Chicago"
-        src="/chicago2.png"
+        src="/maps/chicago2.png"
         width={478}
         height={672}
       />
@@ -27,7 +27,7 @@ export default function Maps() {
       <h2>All</h2>
       <Image
         alt="Downtown Chicago"
-        src="/all.png"
+        src="/maps/all.png"
         width={1251}
         height={691}
       />
