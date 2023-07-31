@@ -25,7 +25,6 @@ export default function Home() {
                 src="/payment/capitalone-logo.png"
                 width={3840}
                 height={2160}
-                // className={styles.capitalOneLogo}
               />
             </div>
             <h2>Account Number</h2>
@@ -79,10 +78,15 @@ export default function Home() {
             <p>$taeilkwak</p>
           </div>
         </div>
-        <Link href="/maps">
-          <a className={styles.maps}>Maps</a>
-        </Link>
       </main>
+      <footer className={styles.footer}>
+        <Link href="https://taeil2.notion.site/Eddy-728e9e0c7a3c40a2a5b5239652cd716f">
+          <a className={styles.footerLink}>Eddy</a>
+        </Link>
+        <Link href="/maps">
+          <a className={styles.footerLink}>Maps</a>
+        </Link>
+      </footer>
     </div>
   )
 }
