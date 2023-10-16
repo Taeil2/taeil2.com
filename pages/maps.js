@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import Footer from "../components/footer"
+
 export default function Maps() {
   return (
     <>
@@ -32,6 +34,7 @@ export default function Maps() {
         height={691}
       />
       <p>There might still be some things missing.</p>
+      {/* <Footer /> */}
     </>
   );
 }

@@ -1,8 +1,8 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
 import styles from './index.module.scss'
 
-import Link from 'next/link'
+import Footer from "../components/footer"
+
 import Image from 'next/image'
 
 export default function Home() {
@@ -79,14 +79,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <Link href="https://taeil2.notion.site/Eddy-728e9e0c7a3c40a2a5b5239652cd716f">
-          <a className={styles.footerLink}>Eddy</a>
-        </Link>
-        <Link href="/maps">
-          <a className={styles.footerLink}>Maps</a>
-        </Link>
-      </footer>
+      <Footer />
     </div>
   )
 }
