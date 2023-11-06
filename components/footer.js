@@ -1,17 +1,33 @@
 import Link from 'next/link'
+import { useState } from 'react'
 import styles from './footer.module.scss'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function Footer() {
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
+
   return <footer className={styles.footer}>
-    <Link href="#" onClick={copyToClipboard()}>
       <a className={styles.footerLink}>
         <CopyToClipboard text="taeil2@gmail.com"
-          onCopy={() => console.log("copied")}>
+          onCopy={() => {
+            setShowTooltip(true)
+            setTimeout(() => {
+              setFadeOut(true)
+            }, 4000)
+            setTimeout(() => {
+              setShowTooltip(false)
+              setFadeOut(false)
+            }, 5000)
+          }}>
             <span>Email</span>
         </CopyToClipboard>
+        <div className={`${styles.tooltip} ${showTooltip && styles.showTooltip} ${fadeOut && styles.fadeOut}`}>
+          {/* <span> */}
+          copied taeil2@gmail.com to clipboard
+          {/* </span> */}
+        </div>
       </a>
-    </Link>
     <Link href="https://www.linkedin.com/in/taeil2/">
       <a className={styles.footerLink}>LinkedIn</a>
     </Link>
