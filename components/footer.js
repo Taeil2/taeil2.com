@@ -8,26 +8,29 @@ export default function Footer() {
   const [fadeOut, setFadeOut] = useState(false);
 
   return <footer className={styles.footer}>
-      <a className={styles.footerLink}>
-        <CopyToClipboard text="taeil2@gmail.com"
-          onCopy={() => {
-            setShowTooltip(true)
-            setTimeout(() => {
-              setFadeOut(true)
-            }, 4000)
-            setTimeout(() => {
-              setShowTooltip(false)
-              setFadeOut(false)
-            }, 5000)
-          }}>
-            <span>Email</span>
-        </CopyToClipboard>
-        <div className={`${styles.tooltip} ${showTooltip && styles.showTooltip} ${fadeOut && styles.fadeOut}`}>
-          {/* <span> */}
-          copied taeil2@gmail.com to clipboard
-          {/* </span> */}
-        </div>
-      </a>
+    <a className={styles.footerLink}>
+      <CopyToClipboard text="taeil2@gmail.com"
+        onCopy={() => {
+          setShowTooltip(true)
+          setTimeout(() => {
+            setFadeOut(true)
+          }, 4000)
+          setTimeout(() => {
+            setShowTooltip(false)
+            setFadeOut(false)
+          }, 5000)
+        }}>
+          <span>Email</span>
+      </CopyToClipboard>
+      <div className={`${styles.tooltip} ${showTooltip && styles.showTooltip} ${fadeOut && styles.fadeOut}`}>
+        {/* <span> */}
+        copied taeil2@gmail.com to clipboard
+        {/* </span> */}
+      </div>
+    </a>
+    <Link href="tel:375-949-8820">
+      <a className={styles.footerLink}>Phone</a>
+    </Link>
     <Link href="https://www.linkedin.com/in/taeil2/">
       <a className={styles.footerLink}>LinkedIn</a>
     </Link>
