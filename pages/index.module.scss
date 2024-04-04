@@ -21,7 +21,8 @@
   display: flex;
   max-width: 1200px;
   > div {
-    flex: 1 0 30%;
+    flex: 1 0 20%;
+    flex-wrap: wrap;
     margin: 0 20px;
     display: flex;
     flex-direction: column;

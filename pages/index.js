@@ -33,6 +33,20 @@ export default function Home() {
             <h3>031176110</h3>
           </div>
           <div>
+            <div className={styles.bankOfAmericaLogo}>
+              <Image
+                alt="Bank of America"
+                src="/payment/bankofamerica-logo.png"
+                width={1692}
+                height={756}
+              />
+            </div>
+            <h2>Account Number</h2>
+            <h3>000478976487</h3>
+            <h2>Routing Number</h2>
+            <h3>026009593</h3>
+          </div>
+          <div>
             <div className={styles.venmoLogo}>
               <Image
                 alt="Venmo"
