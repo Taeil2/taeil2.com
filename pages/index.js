@@ -69,14 +69,16 @@ export default function Home() {
             </div>
             <p>@taeil2</p>
           </div>
-          <div style={{marginTop: -35}}>
-            <Image
-              alt="Cashapp"
-              src="/payment/cashapp-logo.svg"
-              width={1200}
-              height={800}
-              className={styles.capitalOneLogo}
-            />
+          <div>
+            <div className={styles.cashAppLogo}>
+              <Image
+                alt="Cashapp"
+                src="/payment/cashapp-logo.svg"
+                width={1200}
+                height={800}
+                className={styles.capitalOneLogo}
+              />
+            </div>
             <div className={styles.cashAppQR}>
               {/* <Image
                 alt="Cashapp"
