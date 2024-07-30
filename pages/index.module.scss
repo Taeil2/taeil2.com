@@ -48,23 +48,38 @@
   font-weight: 300;
 }
 
-@media (max-width: 1200px) {
-  .paymentMethods {
-    > div {
-      flex: 1 0 40%;
-      margin: 20px 20px;
-    }
-  }
-}
+// with 4 sections
+// @media (max-width: 1200px) {
+//   .paymentMethods {
+//     > div {
+//       flex: 1 0 40%;
+//       margin: 20px 20px;
+//     }
+//   }
+// }
 
-@media (max-width: 799px) {
+// @media (max-width: 799px) {
+//   .paymentMethods {
+//     flex-direction: column;
+//     > div {
+//       // flex: 1 0 30%;
+//     }
+//   }
+
+//   .footer {
+//     position: unset;
+//     margin-left: -30px;
+//     width: calc(100% + 60px);
+//   }
+// }
+
+@media (max-width: 599px) {
   .paymentMethods {
     flex-direction: column;
     > div {
       // flex: 1 0 30%;
     }
   }
-
   .footer {
     position: unset;
     margin-left: -30px;
@@ -72,21 +87,27 @@
   }
 }
 
-.capitalOneLogo {
-  margin: 0 auto;
-  width: 71% !important;
-  margin-bottom: 20px;
-}
 .bankOfAmericaLogo {
   margin: 3% auto 11%;
   width: 70% !important;
 }
 .venmoLogo {
-  margin: -12% auto -6%;
+  margin: -12% auto -6%; // use if re-adding capital one and cashapp sections
+  margin: 8% auto -6%;
   width: 80%;
+}
+@media (max-width: 599px) {
+  .venmo {
+    flex-wrap: nowrap !important;
+  }
 }
 .venmoQR {
 
+}
+.capitalOneLogo {
+  margin: 0 auto;
+  width: 71% !important;
+  margin-bottom: 20px;
 }
 .cashAppLogo {
   margin: -14% auto -4%;

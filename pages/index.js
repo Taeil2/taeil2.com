@@ -19,20 +19,6 @@ export default function Home() {
         </h1>
         <div className={styles.paymentMethods}>
           <div>
-            <div className={styles.capitalOneLogo}>
-              <Image
-                alt="Capital One"
-                src="/payment/capitalone-logo.png"
-                width={3840}
-                height={2160}
-              />
-            </div>
-            <h2>Account Number</h2>
-            <h3>36180940070</h3>
-            <h2>Routing Number</h2>
-            <h3>031176110</h3>
-          </div>
-          <div>
             <div className={styles.bankOfAmericaLogo}>
               <Image
                 alt="Bank of America"
@@ -46,7 +32,7 @@ export default function Home() {
             <h2>Routing Number</h2>
             <h3>026009593</h3>
           </div>
-          <div>
+          <div className={styles.venmo}>
             <div className={styles.venmoLogo}>
               <Image
                 alt="Venmo"
@@ -69,7 +55,21 @@ export default function Home() {
             </div>
             <p>@taeil2</p>
           </div>
-          <div>
+          {/* <div>
+            <div className={styles.capitalOneLogo}>
+              <Image
+                alt="Capital One"
+                src="/payment/capitalone-logo.png"
+                width={3840}
+                height={2160}
+              />
+            </div>
+            <h2>Account Number</h2>
+            <h3>36180940070</h3>
+            <h2>Routing Number</h2>
+            <h3>031176110</h3>
+          </div> */}
+          {/* <div>
             <div className={styles.cashAppLogo}>
               <Image
                 alt="Cashapp"
@@ -85,14 +85,14 @@ export default function Home() {
                 src="/payment/cashapp-qr.png"
                 width={288}
                 height={288}
-              /> */}
+              />
               <img
                 alt="Cashapp"
                 src="/payment/cashapp-qr.png"
               />
             </div>
             <p>$taeilkwak</p>
-          </div>
+          </div> */}
         </div>
       </main>
       <Footer />
