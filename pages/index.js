@@ -50,8 +50,10 @@ export default function Home() {
               <Image
                 alt="Cashapp"
                 src="/payment/cashapp-logo.svg"
-                width={1200}
-                height={800}
+                // width={1200}
+                // height={800}
+                width={290}
+                height={193}
                 className={styles.capitalOneLogo}
               />
             </div>
