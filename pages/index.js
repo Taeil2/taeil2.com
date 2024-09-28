@@ -72,7 +72,7 @@ export default function Home() {
             <h2>Routing Number</h2>
             <h3>041 215 663</h3>
           </div>
-          {/* <div>
+          <div>
             <div className={styles.bankOfAmericaLogo}>
               <Image
                 alt="Bank of America"
@@ -85,8 +85,8 @@ export default function Home() {
             <h3>000478976487</h3>
             <h2>Routing Number</h2>
             <h3>026009593</h3>
-          </div> */}
-          {/* <div>
+          </div>
+          <div>
             <div className={styles.capitalOneLogo}>
               <Image
                 alt="Capital One"
@@ -99,7 +99,7 @@ export default function Home() {
             <h3>36180940070</h3>
             <h2>Routing Number</h2>
             <h3>031176110</h3>
-          </div> */}
+          </div>
         </div>
       </main>
       <Footer />
