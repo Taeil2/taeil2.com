@@ -21,7 +21,7 @@ export default function Home() {
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
         <div className={styles.paymentMethods}>
-        <div className={styles.venmo}>
+          <div className={styles.venmo}>
             <div className={styles.venmoLogo}>
               <Image
                 alt="Venmo"
@@ -45,12 +45,12 @@ export default function Home() {
               />
             </div>
             <div className={styles.venmoQR}>
-              {/* <Image
+              // <Image
                 alt="Venmo"
                 src="/payment/venmo-qr.png"
                 width={171}
                 height={170}
-              /> */}
+              />
               <img alt="Venmo" src="/payment/venmo-qr.png" />
             </div>
             <p>@taeil2</p>
