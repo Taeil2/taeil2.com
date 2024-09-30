@@ -21,7 +21,21 @@ export default function Home() {
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
         <div className={styles.paymentMethods}>
-          <div className={styles.venmo}>
+        <div className={styles.venmo}>
+            <div className={styles.venmoLogo}>
+              <Image
+                alt="Venmo"
+                src="/payment/chime-logo.svg"
+                width={171}
+                height={170}
+              />
+            </div>
+            <h2>Account Number</h2>
+            <h3>689155362031</h3>
+            <h2>Routing Number</h2>
+            <h3>103100195</h3>
+          </div>
+          {/* <div className={styles.venmo}>
             <div className={styles.venmoLogo}>
               <Image
                 alt="Venmo"
@@ -44,7 +58,7 @@ export default function Home() {
             <h3>222 185 860 055</h3>
             <h2>Routing Number</h2>
             <h3>031 101 279</h3>
-          </div>
+          </div> */}
           <div className={styles.cashApp}>
             <div className={styles.cashAppLogo}>
               <Image
