@@ -21,12 +21,12 @@ export default function Home() {
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
         <div>
-        <Image
-                alt="Venmo"
+        {/* <Image
+                alt="Chime"
                 src="/payment/chime-logo.svg"
                 width={171}
                 height={170}
-              />
+              /> */}
         </div>
         <div className={styles.paymentMethods}>
           <div className={styles.venmo}>
@@ -66,9 +66,21 @@ export default function Home() {
               /> */}
             </div>
             <h2>Account Number</h2>
-            <h3>6891 5536 2031</h3>
+            <h3>
+              6891
+              <span className={styles.spacer} />
+              5536
+              <span className={styles.spacer} />
+              2031
+            </h3>
             <h2>Routing Number</h2>
-            <h3>103 100 195</h3>
+            <h3>
+              103
+              <span className={styles.spacer} />
+              100
+              <span className={styles.spacer} />
+              195
+            </h3>
           </div>
           {/* <div className={styles.venmo}>
             <div className={styles.venmoLogo}>
@@ -117,9 +129,23 @@ export default function Home() {
             </div>
             <p>$taeilkwak</p>
             <h2>Account Number</h2>
-            <h3>12 938 9102 7716</h3>
+            <h3>
+              12
+              <span className={styles.spacer} />
+              938
+              <span className={styles.spacer} />
+              9102
+              <span className={styles.spacer} />
+              7716
+            </h3>
             <h2>Routing Number</h2>
-            <h3>041 215 663</h3>
+            <h3>
+              041
+              <span className={styles.spacer} />
+              215
+              <span className={styles.spacer} />
+              663
+            </h3>
           </div>
           <div>
             <div className={styles.bankOfAmericaLogo}>
@@ -131,9 +157,21 @@ export default function Home() {
               />
             </div>
             <h2>Account Number</h2>
-            <h3>000478976487</h3>
+            <h3>
+              0004
+              <span className={styles.spacer} />
+              7897
+              <span className={styles.spacer} />
+              6487
+            </h3>
             <h2>Routing Number</h2>
-            <h3>026009593</h3>
+            <h3>
+              026
+              <span className={styles.spacer} />
+              009
+              <span className={styles.spacer} />
+              593
+            </h3>
           </div>
           <div>
             <div className={styles.capitalOneLogo}>
@@ -145,9 +183,21 @@ export default function Home() {
               />
             </div>
             <h2>Account Number</h2>
-            <h3>36180940070</h3>
+            <h3>
+              3618
+              <span className={styles.spacer} />
+              0940
+              <span className={styles.spacer} />
+              070
+            </h3>
             <h2>Routing Number</h2>
-            <h3>031176110</h3>
+            <h3>
+              031
+              <span className={styles.spacer} />
+              176
+              <span className={styles.spacer} />
+              110
+            </h3>
           </div>
         </div>
       </main>
