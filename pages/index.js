@@ -130,11 +130,11 @@ export default function Home() {
             <p>$taeilkwak</p>
             <h2>Account Number</h2>
             <h3>
-              12
+              129
               <span className={styles.spacer} />
-              938
+              389
               <span className={styles.spacer} />
-              9102
+              102
               <span className={styles.spacer} />
               7716
             </h3>
