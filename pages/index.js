@@ -20,14 +20,40 @@ export default function Home() {
         <h1>
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
-        <div>
-        {/* <Image
-                alt="Chime"
-                src="/payment/chime-logo.svg"
-                width={171}
-                height={170}
-              /> */}
-        </div>
+          {/* logos
+          <Image
+              alt="Chime"
+              src="/payment/chime-logo.svg"
+              width={171}
+              height={170}
+            /> 
+            {/* <Image
+              alt="Bank of America"
+              src="/payment/bankofamerica-logo.png"
+              width={1692}
+              height={756}
+            />
+            <Image
+              alt="Cashapp"
+              src="/payment/cashapp-logo.svg"
+              // width={1200}
+              // height={800}
+              width={290}
+              height={193}
+              className={styles.capitalOneLogo}
+            />
+            <Image
+              alt="Venmo"
+              src="/payment/venmo-logo.svg"
+              width={171}
+              height={170}
+            />
+            <Image
+              alt="Capital One"
+              src="/payment/capitalone-logo.png"
+              width={3840}
+              height={2160}
+            /> */}
         <div className={styles.paymentMethods}>
           <div className={styles.venmo}>
             <div className={styles.venmoLogo}>
@@ -37,33 +63,6 @@ export default function Home() {
                 width={171}
                 height={170}
               />
-              {/* <Image
-                alt="Bank of America"
-                src="/payment/bankofamerica-logo.png"
-                width={1692}
-                height={756}
-              />
-              <Image
-                alt="Cashapp"
-                src="/payment/cashapp-logo.svg"
-                // width={1200}
-                // height={800}
-                width={290}
-                height={193}
-                className={styles.capitalOneLogo}
-              />
-              <Image
-                alt="Venmo"
-                src="/payment/venmo-logo.svg"
-                width={171}
-                height={170}
-              />
-              <Image
-                alt="Capital One"
-                src="/payment/capitalone-logo.png"
-                width={3840}
-                height={2160}
-              /> */}
             </div>
             <h2>Account Number</h2>
             <h3>
@@ -106,7 +105,7 @@ export default function Home() {
             <h2>Routing Number</h2>
             <h3>031 101 279</h3>
           </div> */}
-          <div className={styles.cashApp}>
+          {/* <div className={styles.cashApp}>
             <div className={styles.cashAppLogo}>
               <Image
                 alt="Cashapp"
@@ -119,12 +118,6 @@ export default function Home() {
               />
             </div>
             <div className={styles.cashAppQR}>
-              {/* <Image
-                alt="Cashapp"
-                src="/payment/cashapp-qr.png"
-                width={288}
-                height={288}
-              /> */}
               <img alt="Cashapp" src="/payment/cashapp-qr.png" />
             </div>
             <p>$taeilkwak</p>
@@ -146,8 +139,8 @@ export default function Home() {
               <span className={styles.spacer} />
               663
             </h3>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <div className={styles.bankOfAmericaLogo}>
               <Image
                 alt="Bank of America"
@@ -172,8 +165,8 @@ export default function Home() {
               <span className={styles.spacer} />
               593
             </h3>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <div className={styles.capitalOneLogo}>
               <Image
                 alt="Capital One"
@@ -198,7 +191,7 @@ export default function Home() {
               <span className={styles.spacer} />
               110
             </h3>
-          </div>
+          </div> */}
         </div>
       </main>
       <Footer />
