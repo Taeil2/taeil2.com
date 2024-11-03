@@ -73,12 +73,13 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.cashApp}>
-            <div className={`${styles.bankLogo} ${styles.cashAppLogo}`}>
+            <div className={styles.bankLogo}>
               <Image
                 alt="Cashapp"
                 src="/payment/cashapp-logo.svg"
-                width={290}
-                height={193}
+                width={866.6}
+                height={204.7}
+                className={styles.cashAppLogo}
               />
             </div>
             <div className={styles.cashAppQR}>

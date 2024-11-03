@@ -52,7 +52,10 @@
 // banks and "banks"
 .bankLogo {
   // max-width: 200px;
-  max-height: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 .bylineBank {
   // margin-top: 7% !important;
@@ -75,6 +78,7 @@
 }
 .cashAppQR {
   img {
+    width: 170px !important;
     // width: 165px;
     // margin-top: -9px;
   }
