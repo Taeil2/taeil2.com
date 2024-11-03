@@ -58,7 +58,7 @@ export default function Home() {
           <div className={styles.bylineBank}>
             <div className={styles.bylineBankLogo}>
               <Image
-                alt="Bank of America"
+                alt="Byline Bank"
                 src="/payment/bylinebank-logo.svg"
                 width={250}
                 height={68}
