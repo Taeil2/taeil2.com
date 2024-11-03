@@ -81,31 +81,7 @@ export default function Home() {
               195
             </h3>
           </div>
-          {/* <div className={styles.venmo}>
-            <div className={styles.venmoLogo}>
-              <Image
-                alt="Venmo"
-                src="/payment/venmo-logo.svg"
-                width={171}
-                height={170}
-              />
-            </div>
-            <div className={styles.venmoQR}>
-              <Image
-                alt="Venmo"
-                src="/payment/venmo-qr.png"
-                width={171}
-                height={170}
-              />
-              <img alt="Venmo" src="/payment/venmo-qr.png" />
-            </div>
-            <p>@taeil2</p>
-            <h2>Account Number</h2>
-            <h3>222 185 860 055</h3>
-            <h2>Routing Number</h2>
-            <h3>031 101 279</h3>
-          </div> */}
-          {/* <div className={styles.cashApp}>
+          <div className={styles.cashApp}>
             <div className={styles.cashAppLogo}>
               <Image
                 alt="Cashapp"
@@ -139,8 +115,8 @@ export default function Home() {
               <span className={styles.spacer} />
               663
             </h3>
-          </div> */}
-          {/* <div>
+          </div>
+          <div className={styles.bankOfAmerica}>
             <div className={styles.bankOfAmericaLogo}>
               <Image
                 alt="Bank of America"
@@ -165,6 +141,30 @@ export default function Home() {
               <span className={styles.spacer} />
               593
             </h3>
+          </div>
+          {/* <div className={styles.venmo}>
+            <div className={styles.venmoLogo}>
+              <Image
+                alt="Venmo"
+                src="/payment/venmo-logo.svg"
+                width={171}
+                height={170}
+              />
+            </div>
+            <div className={styles.venmoQR}>
+              <Image
+                alt="Venmo"
+                src="/payment/venmo-qr.png"
+                width={171}
+                height={170}
+              />
+              <img alt="Venmo" src="/payment/venmo-qr.png" />
+            </div>
+            <p>@taeil2</p>
+            <h2>Account Number</h2>
+            <h3>222 185 860 055</h3>
+            <h2>Routing Number</h2>
+            <h3>031 101 279</h3>
           </div> */}
           {/* <div>
             <div className={styles.capitalOneLogo}>
