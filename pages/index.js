@@ -55,6 +55,31 @@ export default function Home() {
               height={2160}
             /> */}
         <div className={styles.paymentMethods}>
+          <div className={styles.bylineBank}>
+            <div className={styles.bylineBankLogo}>
+              <Image
+                alt="Bank of America"
+                src="/payment/bylinebank-logo.svg"
+                width={250}
+                height={68}
+              />
+            </div>
+            <h2>Account Number</h2>
+            <h3>
+              645
+              <span className={styles.spacer} />
+              079
+              <span className={styles.spacer} />
+              0874
+            </h3>
+            <h2>Routing Number</h2>
+            <h3>
+              7100
+              <span className={styles.spacer} />
+              1533
+              <span className={styles.spacer} />
+            </h3>
+          </div>
           <div className={styles.venmo}>
             <div className={styles.venmoLogo}>
               <Image
