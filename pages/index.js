@@ -7,12 +7,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>tae2.com</title>
+        <title>Taeil's Bank Account Information</title>
         <meta
           name="description"
-          content="Taeil's Capital One bank account information"
+          content="Taeil's Bank Account Information"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -20,43 +20,9 @@ export default function Home() {
         <h1>
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
-          {/* logos
-          <Image
-              alt="Chime"
-              src="/payment/chime-logo.svg"
-              width={171}
-              height={170}
-            /> 
-            {/* <Image
-              alt="Bank of America"
-              src="/payment/bankofamerica-logo.png"
-              width={1692}
-              height={756}
-            />
-            <Image
-              alt="Cashapp"
-              src="/payment/cashapp-logo.svg"
-              // width={1200}
-              // height={800}
-              width={290}
-              height={193}
-              className={styles.capitalOneLogo}
-            />
-            <Image
-              alt="Venmo"
-              src="/payment/venmo-logo.svg"
-              width={171}
-              height={170}
-            />
-            <Image
-              alt="Capital One"
-              src="/payment/capitalone-logo.png"
-              width={3840}
-              height={2160}
-            /> */}
         <div className={styles.paymentMethods}>
           <div className={styles.bylineBank}>
-            <div className={styles.bylineBankLogo}>
+            <div className={`${styles.bankLogo} ${styles.bylineBankLogo}`}>
               <Image
                 alt="Byline Bank"
                 src="/payment/bylinebank-logo.svg"
@@ -80,13 +46,13 @@ export default function Home() {
               <span className={styles.spacer} />
             </h3>
           </div>
-          <div className={styles.venmo}>
-            <div className={styles.venmoLogo}>
+          <div className={styles.chime}>
+            <div className={`${styles.bankLogo} ${styles.chimeLogo}`}>
               <Image
                 alt="Chime"
                 src="/payment/chime-logo.svg"
-                width={171}
-                height={170}
+                width={156.10}
+                height={44.45}
               />
             </div>
             <h2>Account Number</h2>
@@ -107,19 +73,21 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.cashApp}>
-            <div className={styles.cashAppLogo}>
+            <div className={`${styles.bankLogo} ${styles.cashAppLogo}`}>
               <Image
                 alt="Cashapp"
                 src="/payment/cashapp-logo.svg"
-                // width={1200}
-                // height={800}
                 width={290}
                 height={193}
-                className={styles.capitalOneLogo}
               />
             </div>
             <div className={styles.cashAppQR}>
-              <img alt="Cashapp" src="/payment/cashapp-qr.png" />
+              <Image
+                alt="Cash App QR"
+                src="/payment/cashapp-qr.png"
+                width={288}
+                height={288}
+              />
             </div>
             <p>$taeilkwak</p>
             <h2>Account Number</h2>
@@ -142,12 +110,12 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.bankOfAmerica}>
-            <div className={styles.bankOfAmericaLogo}>
+            <div className={`${styles.bankLogo} ${styles.bankOfAmericaLogo}`}>
               <Image
                 alt="Bank of America"
-                src="/payment/bankofamerica-logo.png"
-                width={1692}
-                height={756}
+                src="/payment/bankofamerica-logo.svg"
+                width={720}
+                height={73}
               />
             </div>
             <h2>Account Number</h2>
@@ -167,46 +135,45 @@ export default function Home() {
               593
             </h3>
           </div>
-          {/* <div className={styles.venmo}>
-            <div className={styles.venmoLogo}>
+          <div className={styles.venmo}>
+            <div className={`${styles.bankLogo} ${styles.venmoLogo}`}>
               <Image
                 alt="Venmo"
                 src="/payment/venmo-logo.svg"
-                width={171}
-                height={170}
+                width={194.47}
+                height={35.72}
               />
             </div>
             <div className={styles.venmoQR}>
               <Image
-                alt="Venmo"
+                alt="Venmo QR"
                 src="/payment/venmo-qr.png"
                 width={171}
                 height={170}
               />
-              <img alt="Venmo" src="/payment/venmo-qr.png" />
             </div>
             <p>@taeil2</p>
             <h2>Account Number</h2>
-            <h3>222 185 860 055</h3>
+            <h3>2221 8586 0055</h3>
             <h2>Routing Number</h2>
             <h3>031 101 279</h3>
-          </div> */}
-          {/* <div>
-            <div className={styles.capitalOneLogo}>
+          </div>
+          <div className={styles.capitalOne}>
+            <div className={`${styles.bankLogo} ${styles.capitalOneLogo}`}>
               <Image
                 alt="Capital One"
-                src="/payment/capitalone-logo.png"
-                width={3840}
-                height={2160}
+                src="/payment/capitalone-logo.svg"
+                width={418}
+                height={150}
               />
             </div>
             <h2>Account Number</h2>
             <h3>
-              3618
+              361
               <span className={styles.spacer} />
-              0940
+              8094
               <span className={styles.spacer} />
-              070
+              0070
             </h3>
             <h2>Routing Number</h2>
             <h3>
@@ -216,7 +183,7 @@ export default function Home() {
               <span className={styles.spacer} />
               110
             </h3>
-          </div> */}
+          </div>
         </div>
       </main>
       <Footer />
