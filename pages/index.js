@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Taeil's Bank Account Information</title>
+        <title>Taeil&apos;s Bank Account Information</title>
         <meta
           name="description"
           content="Taeil's Bank Account Information"
