@@ -22,12 +22,16 @@ export default function Home() {
         </h1>
         <div className={styles.paymentMethods}>
           <div className={styles.bylineBank}>
-            <div className={`${styles.bankLogo} ${styles.bylineBankLogo}`}>
+            <div
+              // className={`${styles.bankLogo} ${styles.bylineBankLogo}`}
+              className={styles.bankLogo}
+              >
               <Image
                 alt="Byline Bank"
                 src="/payment/bylinebank-logo.svg"
                 width={250}
                 height={68}
+                className={styles.bylineBankLogo}
               />
             </div>
             <h2>Account Number</h2>
@@ -47,12 +51,13 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.chime}>
-            <div className={`${styles.bankLogo} ${styles.chimeLogo}`}>
+            <div className={styles.bankLogo}>
               <Image
                 alt="Chime"
                 src="/payment/chime-logo.svg"
                 width={156.10}
                 height={44.45}
+                className={styles.chimeLogo}
               />
             </div>
             <h2>Account Number</h2>
@@ -111,12 +116,13 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.bankOfAmerica}>
-            <div className={`${styles.bankLogo} ${styles.bankOfAmericaLogo}`}>
+            <div className={styles.bankLogo}>
               <Image
                 alt="Bank of America"
                 src="/payment/bankofamerica-logo.svg"
                 width={720}
                 height={73}
+                className={styles.bankOfAmericaLogo}
               />
             </div>
             <h2>Account Number</h2>
@@ -136,13 +142,14 @@ export default function Home() {
               593
             </h3>
           </div>
-          <div className={styles.venmo}>
-            <div className={`${styles.bankLogo} ${styles.venmoLogo}`}>
+          {/* <div className={styles.venmo}>
+            <div className={styles.bankLogo}>
               <Image
                 alt="Venmo"
                 src="/payment/venmo-logo.svg"
                 width={194.47}
                 height={35.72}
+                className={styles.venmoLogo}
               />
             </div>
             <div className={styles.venmoQR}>
@@ -160,12 +167,13 @@ export default function Home() {
             <h3>031 101 279</h3>
           </div>
           <div className={styles.capitalOne}>
-            <div className={`${styles.bankLogo} ${styles.capitalOneLogo}`}>
+            <div className={styles.bankLogo}>
               <Image
                 alt="Capital One"
                 src="/payment/capitalone-logo.svg"
                 width={418}
                 height={150}
+                className={styles.capitalOneLogo}
               />
             </div>
             <h2>Account Number</h2>
@@ -184,7 +192,7 @@ export default function Home() {
               <span className={styles.spacer} />
               110
             </h3>
-          </div>
+          </div> */}
         </div>
       </main>
       <Footer />

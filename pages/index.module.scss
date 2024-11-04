@@ -39,80 +39,51 @@
   }
 }
 
-.error {
-  border: 1px #f00;
-  background-color: #fdd;
-
-  &--serious {
-    @extend .error;
-    border-width: 3px;
-  }
-}
-
 // banks and "banks"
 .bankLogo {
-  // max-width: 200px;
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 .bylineBank {
-  // margin-top: 7% !important;
 }
 .bylineBankLogo {
-  // margin-bottom: 25px;
 }
 .chime {
-
 }
 .chimeLogo {
-
 }
 .cashApp {
-  // margin-top: 7% !important;
 }
 .cashAppLogo {
-  // margin: -14% auto -4%;
-  // max-width: 290px;
+  min-width: unset !important;
+  width: 240px !important;
 }
 .cashAppQR {
   img {
     width: 170px !important;
-    // width: 165px;
-    // margin-top: -9px;
   }
 }
 .bankOfAmerica {
-  // margin-top: 7% !important;
 }
 .bankOfAmericaLogo {
-  // margin: 3% auto 11%;
-  // width: 70% !important;
+  width: 380px !important;
+  height: unset !important;
+  min-width: unset !important;
+  min-height: unset !important;
 }
 .venmo {
-
 }
 .venmoLogo {
-  // margin: -12% auto -6%; // use if re-adding capital one and cashapp sections
-  // margin: 8% auto -6%;
-  // width: 80%;
-}
-@media (max-width: 599px) {
-  .venmo {
-    // flex-wrap: nowrap !important;
-  }
+  min-width: unset !important;
+  width: 170px !important;
 }
 .venmoQR {
-
 }
 .capitalOne {
-
 }
 .capitalOneLogo {
-  // margin: 0 auto;
-  // width: 71% !important;
-  // margin-bottom: 20px;
 }
 .spacer {
   display: inline-flex;

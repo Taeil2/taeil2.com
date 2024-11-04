@@ -29,7 +29,7 @@ body {
   background: #fcfcfc;
 }
 h1, h2, h3 {
-  color: #333;
+  color: #444;
 }
 h1 {
   margin: 0;
@@ -48,5 +48,5 @@ h3 {
   font-size: 38px;
   font-weight: 300;
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
