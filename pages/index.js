@@ -44,9 +44,11 @@ export default function Home() {
             </h3>
             <h2>Routing Number</h2>
             <h3>
-              7100
+              071
               <span className={styles.spacer} />
-              1533
+              001
+              <span className={styles.spacer} />
+              533
               <span className={styles.spacer} />
             </h3>
           </div>
