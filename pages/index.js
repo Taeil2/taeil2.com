@@ -110,7 +110,7 @@ export default function Home() {
               195
             </h3>
           </div>
-          <div className={styles.cashApp}>
+          {/* <div className={styles.cashApp}>
             <div className={styles.bankLogo}>
               <Image
                 alt="Cashapp"
@@ -147,7 +147,7 @@ export default function Home() {
               <span className={styles.spacer} />
               663
             </h3>
-          </div>
+          </div> */}
           <div className={styles.bankOfAmerica}>
             <div className={styles.bankLogo}>
               <Image
