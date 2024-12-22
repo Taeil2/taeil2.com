@@ -1,6 +1,6 @@
 import Head from "next/head";
-// import styles from "./index.module.scss";
-import styles from "./no-images.module.scss";
+import styles from "./index.module.scss";
+// import styles from "./no-images.module.scss";
 
 import Footer from "../components/footer";
 
@@ -22,6 +22,36 @@ export default function Home() {
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
         <div className={styles.paymentMethods}>
+        <div className={styles.bylineBank}>
+            <div
+              // className={`${styles.bankLogo} ${styles.buseyBankLogo}`}
+              className={styles.bankLogo}
+              >
+              <Image
+                alt="Busey Bank"
+                src="/payment/buseybank-logo.svg"
+                width={169}
+                height={57}
+                className={styles.buseyBankLogo}
+              />
+            </div>
+            <h2>Account Number</h2>
+            <h3>
+              2305
+              <span className={styles.spacer} />
+              8777
+              <span className={styles.spacer} />
+              7034
+            </h3>
+            <h2>Routing Number</h2>
+            <h3>
+              071
+              <span className={styles.spacer} />
+              102
+              <span className={styles.spacer} />
+              568
+            </h3>
+          </div>
           <div className={styles.bylineBank}>
             <div
               // className={`${styles.bankLogo} ${styles.bylineBankLogo}`}
