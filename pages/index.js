@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "./index.module.scss";
+// import styles from "./index.module.scss";
+import styles from "./no-images.module.scss";
 
 import Footer from "../components/footer";
 
