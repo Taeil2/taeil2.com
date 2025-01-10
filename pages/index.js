@@ -22,7 +22,38 @@ export default function Home() {
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
         <div className={styles.paymentMethods}>
-        <div className={styles.bylineBank}>
+          <div className={styles.morgantownBank}>
+            <div
+              // className={`${styles.bankLogo} ${styles.morgantownLogo}`}
+              className={styles.bankLogo}
+              >
+              <Image
+                alt="Morgantown Bank and Trust"
+                src="/payment/morgantownbankandtrust-logo-750.png"
+                width={750}
+                height={178}
+                objectFit={'contain'} 
+                className={styles.morgantownLogo}
+              />
+            </div>
+            <h2>Account Number</h2>
+            <h3>
+              401
+              <span className={styles.spacer} />
+              499
+              <span className={styles.spacer} />
+              138
+            </h3>
+            <h2>Routing Number</h2>
+            <h3>
+              083
+              <span className={styles.spacer} />
+              903
+              <span className={styles.spacer} />
+              742
+            </h3>
+          </div>
+          <div className={styles.buseyBank}>
             <div
               // className={`${styles.bankLogo} ${styles.buseyBankLogo}`}
               className={styles.bankLogo}
