@@ -22,7 +22,7 @@ export default function Home() {
           Welcome to <span className={styles.blueText}>tae2.com</span>
         </h1>
         <div className={styles.paymentMethods}>
-          <div className={styles.morgantownBank}>
+          {/* <div className={styles.morgantownBank}>
             <div
               // className={`${styles.bankLogo} ${styles.morgantownLogo}`}
               className={styles.bankLogo}
@@ -52,7 +52,7 @@ export default function Home() {
               <span className={styles.spacer} />
               742
             </h3>
-          </div>
+          </div> */}
           <div className={styles.buseyBank}>
             <div
               // className={`${styles.bankLogo} ${styles.buseyBankLogo}`}
