@@ -1,0 +1,16 @@
+import styles from "./projectLink.module.scss"
+
+export default function ProjectLink(props) {
+  const { link } = props
+
+  return <div className={styles.container}>
+    {link.image && <div>
+      <a href={`https://www.${link.url}`} target="_blank"><img src={link.image} /></a>
+    </div>}
+    <div>
+      <a href={`https://www.${link.url}`} target="_blank"><h3>{link.title}</h3></a>
+      <p>{link.description}</p>
+      <p>{link.url}</p>
+    </div>
+  </div>
+}

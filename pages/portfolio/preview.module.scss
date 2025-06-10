@@ -1,0 +1,13 @@
+.preview {
+  * {
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+  }
+}
