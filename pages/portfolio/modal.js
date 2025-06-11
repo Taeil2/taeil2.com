@@ -12,11 +12,11 @@ export default function Modal(props) {
         <div>
           <h2>{project.name}</h2>
           <p>{project.description}</p>
-          {project.tags.map((tag) => <div className={styles.tag}>{tag}</div> )}
+          {project.tags.map((tag) => <div className={styles.tag} key={styles.tag}>{tag}</div> )}
         </div>
         <div>
           <ProjectLink link={project.link} />
-          {project.screenshots.map((screenshot) => <img src={screenshot} />)}
+          {project.screenshots.map((screenshot) => <img src={screenshot} key={screenshot} />)}
         </div>
       </div>
       <div className={styles.closeButton} onClick={() => setShowModal(false)}>&times;</div>
