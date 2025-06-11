@@ -42,7 +42,7 @@ const projects = [
       "description": "Schubas and Lincoln Hall are sister venues located in Chicago’s Lakeview and Lincoln Park neighborhoods. All are welcome.",
       "url": "lh-st.com",
     },
-    "screenshots": ["/portfolio/lh-st-screenshot.png"]
+    "screenshots": ["/portfolio/lh-st-screenshot-1.png", "/portfolio/lh-st-screenshot-2.png"]
   },
   {
     "name": "Linescape",
