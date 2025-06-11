@@ -1,11 +1,11 @@
 import { useState } from "react"
 import Head from "next/head";
 
-import Preview from "./preview"
-import Modal from "./modal"
-import projects from "./projects"
+import Preview from "../components/portfolio/preview"
+import Modal from "../components/portfolio/modal"
+import projects from "../files/projects"
 
-import styles from './index.module.scss'
+import styles from './portfolio.module.scss'
 
 export default function Portfolio() {
   const [showModal, setShowModal] = useState(false)
