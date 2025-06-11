@@ -4,7 +4,12 @@ export default function Preview(props) {
   const { project, onClick } = props;
 
   return <div className={styles.preview}>
-      <img src={project.previewImage} onClick={onClick} />
+      <div className={`${styles.imageContainer} ${project.previewBorder && styles.bordered}`}>
+        <img
+          src={project.previewImage}
+          onClick={onClick}
+        />
+      </div>
       <p onClick={props.onClick}>{project.name}</p>
     </div>
 }

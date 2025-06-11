@@ -5,8 +5,6 @@ import ProjectLink from "./projectLink"
 export default function Modal(props) {
   const { project, setShowModal } = props
 
-  console.log(project);
-
   return <div className={styles.container}>
     <div className={styles.background}  onClick={() => setShowModal(false)} />
     <div className={styles.modal}>
@@ -18,11 +16,10 @@ export default function Modal(props) {
         </div>
         <div>
           <ProjectLink link={project.link} />
-          {project.screenshots.map((screenshot) => {
-            <img src={screenshot} />
-          })}
+          {project.screenshots.map((screenshot) => <img src={screenshot} />)}
         </div>
       </div>
+      <div className={styles.closeButton} onClick={() => setShowModal(false)}>&times;</div>
     </div>
   </div>
 }
