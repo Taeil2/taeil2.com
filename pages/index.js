@@ -83,7 +83,7 @@ export default function Home() {
               <span className={styles.spacer} />
             </h3>
           </div>
-          <div className={styles.chime}>
+          {/* <div className={styles.chime}>
             <div className={styles.bankLogo}>
               <Image
                 alt="Chime"
@@ -109,7 +109,7 @@ export default function Home() {
               <span className={styles.spacer} />
               195
             </h3>
-          </div>
+          </div> */}
           {/* <div className={styles.cashApp}>
             <div className={styles.bankLogo}>
               <Image
