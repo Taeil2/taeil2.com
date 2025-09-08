@@ -2,10 +2,6 @@ import Head from "next/head";
 import styles from "./index.module.scss";
 // import styles from "./no-images.module.scss";
 
-import Link from "next/link";
-
-import Footer from "../components/footer";
-
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -23,7 +19,7 @@ export default function Home() {
           name="description"
           content="Send money for Justice / The Resolution / The Solution"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <a rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1>To send the money</h1>
@@ -33,47 +29,88 @@ export default function Home() {
               <h2>Send a new account with money in it</h2>
               <ul>
                 <li>
-                  Create a new account at any bank or in any app that holds
-                  money.
+                  Create a new account at any bank or app that holds money.
                   <br />
                   Some examples include:
                   <ul>
                     <li>
-                      <Link href="https://www.chase.com/">Chase Bank</Link>
+                      <a
+                        href="https://www.chase.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Chase Bank
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://www.hsbc.com/">HSBC Holdings</Link>
+                      <a
+                        href="https://www.hsbc.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        HSBC Holdings
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://www.abchina.com/">
+                      <a
+                        href="https://www.abchina.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Agricultural Bank of China
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://www.rbc.com/">
+                      <a
+                        href="https://www.rbc.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Royal Bank of Canada
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://mabanque.bnpparibas/">
+                      <a
+                        href="https://mabanque.bnpparibas/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         BNP Paribas
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://www.dbs.com/">DBS Bank</Link>
+                      <a
+                        href="https://www.dbs.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        DBS Bank
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://venmo.com/">Venmo</Link>
+                      <a
+                        href="https://venmo.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Venmo
+                      </a>
                     </li>
                     <li>
-                      <Link href="https://cash.app/">Cash App</Link>
+                      <a
+                        href="https://cash.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Cash App
+                      </a>
                     </li>
                   </ul>
                 </li>
-                <li>Transfer your money into this account</li>
+                <li>Transfer your money into this account.</li>
                 <li>
                   Email Taeil at{" "}
-                  <a className={styles.link}>
+                  <a className={styles.a}>
                     <CopyToClipboard
                       text="taeil2@gmail.com"
                       onCopy={() => {
@@ -171,7 +208,13 @@ export default function Home() {
                   />
                 </div>
                 <p>
-                  <Link href="https://account.venmo.com/u/taeil2">@taeil2</Link>
+                  <a
+                    href="https://account.venmo.com/u/taeil2"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @taeil2
+                  </a>
                 </p>
                 {/* <h3>Account Number</h3>
               <h4>2221<span className={styles.spacer} />8586<span className={styles.spacer} />0055</h4>
@@ -197,7 +240,13 @@ export default function Home() {
                   />
                 </div>
                 <p>
-                  <Link href="https://cash.app/$taeilkwak">$taeilkwak</Link>
+                  <a
+                    href="https://cash.app/$taeilkwak"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    $taeilkwak
+                  </a>
                 </p>
                 {/* <h3>Account Number</h3>
               <h4>
