@@ -48,7 +48,7 @@ export default function Home() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        HSBC Holdings
+                        HSBC
                       </a>
                     </li>
                     <li>
