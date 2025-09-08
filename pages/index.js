@@ -37,8 +37,6 @@ export default function Home() {
                   money.
                   <br />
                   Some examples include:
-                </li>
-                <li>
                   <ul>
                     <li>
                       <Link href="https://www.chase.com/">Chase Bank</Link>
