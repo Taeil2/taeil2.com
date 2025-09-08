@@ -19,7 +19,7 @@ export default function Home() {
           name="description"
           content="Send money for Justice / The Resolution / The Solution"
         />
-        <a rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1>To send the money</h1>
