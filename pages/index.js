@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "./index.module.scss";
 // import styles from "./no-images.module.scss";
 
+import Link from "next/link";
+
 import Footer from "../components/footer";
 
 import { useState } from "react";
@@ -40,14 +42,36 @@ export default function Home() {
                   note to self: make sure all have clear create account
                   processes
                   <ul>
-                    <li>JPMorgan Chase</li>
-                    <li>HSBC Holdings</li>
-                    <li>Agricultural Bank of China</li>
-                    <li>Royal Bank of Canada</li>
-                    <li>BNP Paribas</li>
-                    <li>Another Asian Bank</li>
-                    <li>Venmo</li>
-                    <li>Cash App</li>
+                    <li>
+                      <Link href="https://www.chase.com//">Chase Bank</Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.hsbc.com/">HSBC Holdings</Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.abchina.com/">
+                        Agricultural Bank of China
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.rbc.com/">
+                        Royal Bank of Canada
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://mabanque.bnpparibas/">
+                        BNP Paribas
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.dbs.com/">DBS Bank</Link>
+                    </li>
+                    <li>
+                      <Link href="https://venmo.com/">Venmo</Link>
+                    </li>
+                    <li>
+                      <Link href="https://cash.app/">Cash App</Link>
+                    </li>
                   </ul>
                 </li>
                 <li>Transfer your money into this account</li>
@@ -90,11 +114,10 @@ export default function Home() {
                     </li>
                   </ul>
                 </li>
-                <li>
-                  Note: This account is not yours after sending this
-                  information.
-                </li>
               </ul>
+              <p className={styles.faint}>
+                Note: This account is not yours after sending this information.
+              </p>
             </div>
             <div className={styles.section}>
               <h2>Send a wire transfer</h2>
@@ -151,7 +174,9 @@ export default function Home() {
                     height={170}
                   />
                 </div>
-                <p>@taeil2</p>
+                <p>
+                  <Link href="https://account.venmo.com/u/taeil2">@taeil2</Link>
+                </p>
                 {/* <h3>Account Number</h3>
               <h4>2221<span className={styles.spacer} />8586<span className={styles.spacer} />0055</h4>
               <h3>Routing Number</h3>
@@ -175,7 +200,9 @@ export default function Home() {
                     height={288}
                   />
                 </div>
-                <p>$taeilkwak</p>
+                <p>
+                  <Link href="https://cash.app/$taeilkwak">$taeilkwak</Link>
+                </p>
                 {/* <h3>Account Number</h3>
               <h4>
                 129
