@@ -9,52 +9,110 @@
     margin-bottom: 80px;
   }
 }
-.blueText {
+.link {
   color: #0070f3;
-  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+// layout
+.row {
+  display: flex;
+  max-width: 1160px;
+  @media (max-width: 799px) {
+    flex-direction: column;
+  }
+}
+.col {
+  flex: 1 0 40%;
+  margin: 0 30px;
+  @media (max-width: 799px) {
+    flex: 1 0 100%;
+    margin: 0 15px;
+  }
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  opacity: 1;
+  top: -40px;
+  left: -69px;
+  width: 240px;
+  text-align: center;
+  background: #505050;
+  color: #fcfcfc;
+  padding: 8px;
+  border-radius: 9px;
+  font-size: 13px;
+  width: 240px;
+  box-sizing: content-box;
+  cursor: default;
+  transition: opacity 1000ms linear;
+}
+
+@media (max-width: 499px) {
+  .tooltip {
+    left: 0;
+  }
+}
+
+.showTooltip {
+  display: block;
+}
+
+.fadeOut {
+  opacity: 0;
 }
 
 // payment methods
-.paymentMethods {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1000px;
-  > div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex: 1 0 35%;
-    flex-wrap: wrap;
-    margin: 0 20px;
-    margin-bottom: 60px;
-  }
-}
-@media (max-width: 799px) {
-  .paymentMethods {
-    flex-direction: column;
-    > div {
-      flex-wrap: nowrap
-    }
-  }
-}
+// .paymentMethods {
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   max-width: 1000px;
+//   > div {
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+//     flex: 1 0 35%;
+//     flex-wrap: wrap;
+//     margin: 0 20px;
+//     margin-bottom: 60px;
+//   }
+// }
+// @media (max-width: 799px) {
+//   .paymentMethods {
+//     flex-direction: column;
+//     > div {
+//       flex-wrap: nowrap;
+//     }
+//   }
+// }
 
-// banks and "banks"
+// banks and apps
 .bankLogo {
   height: 80px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
-.bylineBank {
+.venmo {
+  text-align: center;
+  margin-bottom: 60px;
 }
-.bylineBankLogo {
+.venmoLogo {
+  min-width: unset !important;
+  width: 170px !important;
 }
-.chime {
-}
-.chimeLogo {
+.venmoQR {
 }
 .cashApp {
+  text-align: center;
 }
 .cashAppLogo {
   min-width: unset !important;
@@ -65,21 +123,9 @@
     width: 170px !important;
   }
 }
-.bankOfAmerica {
+.chime {
 }
-.bankOfAmericaLogo {
-  width: 380px !important;
-  height: unset !important;
-  min-width: unset !important;
-  min-height: unset !important;
-}
-.venmo {
-}
-.venmoLogo {
-  min-width: unset !important;
-  width: 170px !important;
-}
-.venmoQR {
+.chimeLogo {
 }
 .capitalOne {
 }
