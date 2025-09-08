@@ -14,10 +14,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Send money for Justice / The Resolution / The Solution</title>
+        <title>
+          Send money for the Resolution / for Justice / for or to Taeil / for
+          the Solution
+        </title>
         <meta
           name="description"
-          content="Send money for Justice / The Resolution / The Solution"
+          content="Send money for the Resolution / for Justice / for or to Taeil / for the Solution"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
