@@ -39,11 +39,9 @@ export default function Home() {
                   Some examples include:
                 </li>
                 <li>
-                  note to self: make sure all have clear create account
-                  processes
                   <ul>
                     <li>
-                      <Link href="https://www.chase.com//">Chase Bank</Link>
+                      <Link href="https://www.chase.com/">Chase Bank</Link>
                     </li>
                     <li>
                       <Link href="https://www.hsbc.com/">HSBC Holdings</Link>
